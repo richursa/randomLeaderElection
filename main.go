@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 	"time"
 
@@ -46,8 +45,5 @@ func revealHandler(w http.ResponseWriter, r *http.Request) {
 	nodeRevealMap[vars["nodeID"]] = vars["key"]
 }
 func initiateNewBLock(nodeCommitmentMap map[string]string, nodeRevealMap map[string]string) {
-	for i := 0; i < len(nodelist.Nodelist); i++ {
-		fmt.Println(nodeCommitmentMap[nodelist.Nodelist[i]])
-		fmt.Println(nodeRevealMap[nodelist.Nodelist[i]])
-	}
+	//update stuff here
 }
